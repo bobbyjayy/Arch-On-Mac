@@ -37,6 +37,18 @@ ERASE EVERYTHING.
 
 ## Installing Arch
 Restart MacOs, plug in the usb and hold the *option* key to load up the usb.
-So follow the [Arch wiki guide](https://wiki.archlinux.org/index.php/Installation_guide), but skip the part about **partitioning the disk**
-since that is already done. So continue to **formatting the partitions**, skip the
-part about **Boot Loader**.
+Follow the [Arch wiki guide](https://wiki.archlinux.org/index.php/Installation_guide), but skip the part about **partitioning the disk**
+since that is already done. So continue to **formatting the partitions**, skip the part about **Boot Loader**.
+
+### Note about Internet
+I connected my phone with usb to tether an internet connection. I think you can
+only do this with android phones. Another way is to use a usb-to-ethernet
+dongle to connect. You can run `ip link` to show all the network interfaces(the
+*lo* interface is a loopback, so you can ignore that). [dhcpcd](https://wiki.archlinux.org/index.php/Dhcpcd) is already
+installed in the live usb so you will have to install it after you chrooted into
+your installation. If there is problems with dhcpcd finding an ip address, then
+I like to run `ip link set nameOfInterface down`, then `systemctl restart dhcpcd`.
+```
+ip link
+ip link set *interface* down/up
+```
