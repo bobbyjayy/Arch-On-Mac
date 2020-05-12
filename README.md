@@ -1,2 +1,2 @@
 # Arch-On-Mac
-My installation of Arch on a macbook and dotfiles.
+My rundown on installing Arch on my Macbook Air 2013
