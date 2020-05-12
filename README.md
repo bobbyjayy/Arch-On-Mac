@@ -6,7 +6,7 @@ The first step is to partition the disk using disk utility on MacOs. The file
 format does not matter because the partition will be formatted when going
 through the installation of Arch(*so choose whatever ie. Mac Os Extended or Fat*) and choose your size.
 
-##Bootloader(rEFInd)
+## Bootloader(rEFInd)
 Since MacOs already has an EFI partition to boot up the OS(You can check it by
 using `diskutil list` and it will list the partitions), I decided to use rEFInd
 to find and boot up Arch. Plus it has a nice interface that you can configure.
