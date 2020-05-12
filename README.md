@@ -15,6 +15,8 @@ You can check out the website about rEFInd and how to install it [here](http://w
 Note
 >I used the refind-install script on MacOs to install rEFInd and used the same script on Arch after installation. I will mention that process later on.
 
-### Some useful commands
-`diskutil list`
-`diskutil mount EFI`
+### Some useful commands for MacOs
+```
+diskutil list
+diskutil mount EFI
+```
