@@ -55,9 +55,7 @@ ip address show
 ```
 
 ## Making rEFInd find the Arch installation
-I believe I installed rEFInd through pacman following the [wiki guid](https://wiki.archlinux.org/index.php/REFInd).
-Then I ran the same refind-install script, but I am not entirely sure that is
-needed. Maybe you just need to have the refind_linux.conf file in /boot. You can
+You just need to have the refind_linux.conf file in /boot. You can
 read about that [here](https://wiki.archlinux.org/index.php/REFInd#refind_linux.conf). The PARTUUID or UUID was created with fstab during the installation.
 It points to the location of where Arch was installed in memory. The fstab file
 is located at /etc/fstab.
